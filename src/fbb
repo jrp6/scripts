@@ -1,5 +1,8 @@
 #!/bin/sh
-test -e $HOME/.fbb && . $HOME/.fbb
+#test -e $HOME/.fbb && . $HOME/.fbb
+test -n "$XDG_CONFIG_HOME" && test -e $XDG_CONFIG_HOME/fbb/config && . $XDG_CONFIG_HOME/fbb/config
+test -z "$XDG_CONFIG_HOME" && test -e $HOME/.config/fbb/config && . $HOME/.config/fbb/config
+
 
 if test -z "$BROWSER" && test -z "$BROWSER_ARGS"
 then
