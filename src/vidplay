@@ -1,5 +1,6 @@
 #!/bin/sh
-test -e $HOME/.vidplay && . $HOME/.vidplay
+test -n "$XDG_CONFIG_HOME" && test -e $XDG_CONFIG_HOME/vidplay/config && . $XDG_CONFIG_HOME/vidplay/config
+test -z "$XDG_CONFIG_HOME" && test -e $HOME/.config/vidplay/config && . $HOME/.config/vidplay/config
 
 if test -z "$VIDPLAYER" && test -z "$VIDPLAYER_ARGS"
 then
