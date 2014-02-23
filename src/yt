@@ -1,6 +1,5 @@
 #!/bin/sh
 for i in "$@"
 do
-	vidplay $(youtube-dl "$i" | sed 's,^https://,http://,')
-	vidplay $(youtube-dl -g "$i")
+	vidplay $(youtube-dl -g "$i" | sed 's,^https://,http://,')
 done
