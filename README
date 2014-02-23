@@ -42,8 +42,8 @@ Connects to NASA's horizons database
 Installs the awesome Better Than Wolves Minecraft mod by Flowerchild
 NOTE: hardcoded paths
 
-	ircurls.sh
-Reads a IRC log dump on stdin, then executes fbb with all the urls as arguments
+	ircurls.sh [PROGRAM] [PROGARGS]
+Reads a IRC log dump on stdin, then executes fbb or provided program with all the urls as arguments
 
 	mdp2html.sh file.mdp
 Converts files from own, Markdown based .mdo format to html
@@ -51,6 +51,11 @@ Converts files from own, Markdown based .mdo format to html
 	mothball.sh dir
 Mothballs dir, then deletes it
 NOTE: hardcoded paths
+
+	runify
+Makes writing runic text on computer less PITA.
+NOTE: Uses elder futhark.
+NOTE: Uses (th) for thurisaz, (ae) for eiwaz and (ng) for ingwaz.
 
 	vidplay vid0 vid1 ... vidN
 Plays videos.
