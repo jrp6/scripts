@@ -59,8 +59,8 @@ NOTE: Uses (th) for thurisaz, (ae) for eiwaz and (ng) for ingwaz.
 
 	vidplay vid0 vid1 ... vidN
 Plays videos.
-The video player used is the one specified in $VIDPLAYER. If it is not set, the one specified in ~/.vidplay is used. If that is also unset, mplayer is used. Player arguments may be set using VIDPLAYER_ARGS in the same manner as VIDPLAYER
-NOTE: Settings in ~/.vidplay take precedence over the environment; ~/.vidplay is actually a shell script, so you can use 'test -z "$VAR" && VAR=value.
+The video player used is the one specified in $VIDPLAYER. If it is not set, the one specified in $XDG_CONFIG_HOME/vidplay/config is used. If that is also unset, mplayer is used. Player arguments may be set using VIDPLAYER_ARGS in the same manner as VIDPLAYER
+NOTE: The config file is actually a shell script, so you should use 'test -z "$VAR" && VAR=value.
 NOTE: If $VIDPLAYER and $VIDPLAYER_ARGS are still unset, vidplay defaults to `VIDPLAYER=mplayer VIDPLAYER_ARGS="-vo $MPVO -framedrop"` (MPVO=gl by default)
 
 	yt yturl0 yturl1 ... yturlN
